@@ -5,10 +5,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Test {
 
@@ -40,7 +37,7 @@ public class Test {
         //Testo della pagina: (stampa anche il testo dei button)
 //        System.out.println(body.text());
         long time = System.currentTimeMillis();
-        wordCounter.getWordOccurencies(TRENITALIA, "e", 1);
+        wordCounter.getWordOccurencies(WIKIPEDIA, "prova", 1);
         long elapsedTime =  System.currentTimeMillis() - time;
         System.out.println("Time: " + elapsedTime + " ms");
     }

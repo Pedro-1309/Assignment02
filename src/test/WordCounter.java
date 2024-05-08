@@ -28,7 +28,7 @@ public class WordCounter {
                 if (w.equals(word)) wordCounter++;
             }
             if (wordCounter > 0){
-                System.out.println("Word \"" + word + "\" found " + wordCounter + " times in " + url);
+                System.out.println("Word \"" + word + "\" found " + wordCounter + " times in " + url + " (depth: " + currentDepth + ")");
             }
 
             //Visit all the links
@@ -40,7 +40,7 @@ public class WordCounter {
                     }
                 }
             }
-        } catch (UnsupportedMimeTypeException e) {
+        } catch (Exception e) {
             System.out.println("Not valid URL: " + url);
         }
 
